@@ -1,0 +1,22 @@
+{
+  "name": "personalsiteheroku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node":"8.11.1",
+    "yarn":"1.9.4"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "cd client && yarn run start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+    "build": "cd client && yarn install && yarn build"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "express": "^4.16.3"
+  }
+}
