@@ -20,6 +20,7 @@ const Container = styled(posed.ul({
     top:5%;
     right:0;
     list-style:none;
+    z-index:999;
 `
 const Elemento = styled(posed.li({
     hoverable:true,

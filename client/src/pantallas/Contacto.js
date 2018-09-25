@@ -49,7 +49,10 @@ const FormularioContainer = styled(posed.div({
     
 `
 const Formulario = styled.form`
-    
+    background:white;
+    padding:20px;
+    box-shadow:5px 7px 10px 0 rgba(0,0,0,0.7);
+    border-radius:20px;
     fieldset{
         border:none;
     }
@@ -57,13 +60,34 @@ const Formulario = styled.form`
         display:block;
         margin-bottom:10px;
         font-family: 'Titan One', cursive;
-        color:white;
+        
     }
     fieldset input,textarea{
         padding:12px 20px;
         width:100%;
         box-sizing:border-box;
     }
+    
+`
+const BotonEnviar = styled(posed.button({
+    pressable:true,
+    press:{
+        scale:0.8,
+        background:'rgba(107, 185, 240)'
+    },
+    pressEnd:{
+        scale:1,
+        background:'rgb(31, 58, 147)'
+    }
+}))`
+    width:100%;
+    height:50px;
+    border:none;
+    background:rgb(31, 58, 147);
+    color:yellow;
+    cursor:pointer;
+    font-family: 'Titan One', cursive;
+    
 `
 
 export default class Contacto extends React.Component {
@@ -83,6 +107,10 @@ export default class Contacto extends React.Component {
                             <label htmlFor="mensaje">Tu Mensaje:</label>
                             <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                         </fieldset>
+                        <fieldset>
+                            <BotonEnviar type="button">Enviar</BotonEnviar>
+                        </fieldset>
+                        
 
 
                     </Formulario>
