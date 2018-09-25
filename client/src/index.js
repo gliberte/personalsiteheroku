@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import 'font-awesome/css/font-awesome.css';
 
 injectGlobal`
-    @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Titan+One');
+    @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Titan+One|Viga');
     html{
         line-height: 1.15; /* 1 */
         -webkit-text-size-adjust: 100%; /* 2 */
