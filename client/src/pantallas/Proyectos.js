@@ -69,6 +69,7 @@ const Titulo = styled(posed.div({
 const Contenido = styled.section`
     width:90%;
     margin:0 auto;
+    background:rgba(242, 241, 239,1);
 
     @media (max-width:768px){
         width:100%;

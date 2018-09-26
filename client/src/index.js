@@ -6,13 +6,18 @@ import registerServiceWorker from './registerServiceWorker';
 import 'font-awesome/css/font-awesome.css';
 
 injectGlobal`
-    @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Titan+One|Viga');
+    @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Carter+One|Titan+One|Viga');
     html{
         line-height: 1.15; /* 1 */
         -webkit-text-size-adjust: 100%; /* 2 */
     }
     body{
-        margin:0
+        margin:0;
+        height:100%;
+        background:rgb(36, 37, 42);
+    }
+    div#root{
+        height:auto;
     }
     h1 {
         font-size: 2em;
