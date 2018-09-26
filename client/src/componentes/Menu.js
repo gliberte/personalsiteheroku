@@ -55,6 +55,25 @@ const Elemento = styled(posed.li({
         -1px  1px 0 #000,
         1px  1px 0 #000;
     }
+    
+
+    @media (max-width:768px){
+        a{
+            font-size:27px;
+        }
+    }
+    @media (max-width:414px){
+        a{
+            font-size:20px;
+        }
+        margin-bottom:20px;
+    }
+    @media (max-width:320px){
+        a{
+            font-size:16px;
+        }
+        margin-bottom:14px;
+    }
 `
 
 

@@ -48,6 +48,11 @@ const ContentEncabezado = styled(posed.div({
     position: absolute;
     top:5%;
     left:5%;
+
+    @media (max-width:768px){
+        top:20%;
+        left:42%;
+    }
 `
 const MyPic = styled(posed.img({
     
@@ -68,6 +73,13 @@ const MyPic = styled(posed.img({
 })) `
     width:120px;
     border-radius:60px;
+    @media (max-width:1024px){
+        display:none;
+    }
+    @media (max-width:768px){
+        width:130px;
+        border-radius:65px;
+    }
 
 `
 const Nombre = styled(posed.div({
@@ -103,6 +115,15 @@ const Nombre = styled(posed.div({
         color:rgb(255, 203, 5);
         font-size:20px;
         font-weight:bold;
+    }
+
+    @media (max-width:360px){
+        p:nth-child(2){
+            font-size:40px;
+        }
+        span{
+            font-size:16px;
+        }
     }
 `
 

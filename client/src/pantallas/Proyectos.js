@@ -25,6 +25,10 @@ const Encabezado = styled(posed.section({
     background:url(${fondo}) no-repeat;
     background-size:cover;
     position:relative;
+
+    @media (max-width:375px){
+        height:350px;
+    }
 `
 const Titulo = styled(posed.div({
     enter: {
@@ -45,6 +49,7 @@ const Titulo = styled(posed.div({
     left:50%;
     h1{
         text-align:center;
+        text-transform:uppercase;
         font-family: 'Viga', sans-serif;
         color:rgb(0, 181, 204);
         text-shadow:4px 4px 0 #000,
@@ -54,30 +59,51 @@ const Titulo = styled(posed.div({
         1px  1px 0 #000;
 
     }
+    @media (max-width:375px){
+        h1{
+            font-size:22px;
+        }
+        top:55%;
+    }
 `
 const Contenido = styled.section`
+    width:90%;
+    margin:0 auto;
 
+    @media (max-width:768px){
+        width:100%;
+    }
 `
 
 const ItemPortaforlio = styled.div`
     width:100%;
     display:grid;
     grid-template-columns:1fr 1fr;
-    padding:20px;
+    padding:30px 10px;
     margin:100px auto;
+    border-bottom:1px solid #ccc;
 
-    @media (max-width:600px){
+    h2{
+        font-family: 'Alfa Slab One', cursive;
+    }
+
+    @media (max-width:1024px){
         grid-template-columns:1fr;
-        margin:20px auto;
+        margin:50px auto;
+    }
+    @media (max-width:360px){
+        h2{
+            font-size:20px;
+        }
     }
     
 `
 
 const Descripcion = styled.p`
     padding:30px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Viga', sans-serif;
 
-    @media (max-width:600px){
+    @media (max-width:768px){
         padding:5px;
     }
 `
@@ -115,17 +141,17 @@ const ContainerImage = styled(posed.div({
 }))`
     box-shadow:0 5px 7px 0 rgba(0,0,0,0.6);
     margin:0 50px;
-    width:500px;
     a img{
         width:100%;
     }
     
-    @media (max-width:600px){
-        margin:10px 0;
+    @media (max-width:768px){
+        margin:20px 0;
         width:100%;
 
     }
 `
+
 
 export class Proyectos extends Component {
     static propTypes = {

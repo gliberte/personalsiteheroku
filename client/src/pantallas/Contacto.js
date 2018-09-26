@@ -21,11 +21,12 @@ const FormularioContainer = styled(posed.div({
     enter:{
         x:'-50%',
         y:'-50%',
+        scale:1,
         opacity:1,
-        delay:200
+        delay:700
     },
     exit:{
-        x:'-100',
+        scale:0,
         opacity:0
     }
 })) `
@@ -45,6 +46,15 @@ const FormularioContainer = styled(posed.div({
         -1px  1px 0 #000,
         1px  1px 0 #000;
 
+    }
+
+    @media (max-width:414px){
+        h1{
+            font-size:17px;
+        }
+        width:100%;
+        top:55%;
+        height:300px;
     }
     
 `
@@ -67,6 +77,27 @@ const Formulario = styled.form`
         width:100%;
         box-sizing:border-box;
     }
+
+
+    @media (max-width:414px){
+        border-radius:0;
+        fieldset input,textarea{
+            border:1px solid rgba(228, 241, 254,0.7);
+        }
+        fieldset input{
+            height:25px;
+            
+        }
+        fieldset textarea{
+            height:60px;
+        }
+
+        fieldset label{
+            font-size:15px;
+        }
+    }
+
+    
     
 `
 const BotonEnviar = styled(posed.button({
@@ -87,6 +118,8 @@ const BotonEnviar = styled(posed.button({
     color:yellow;
     cursor:pointer;
     font-family: 'Titan One', cursive;
+
+    
     
 `
 
