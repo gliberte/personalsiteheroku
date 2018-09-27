@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'moment/locale/es-us'
 import { injectGlobal } from 'styled-components'
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
@@ -7,6 +8,8 @@ import 'font-awesome/css/font-awesome.css';
 
 injectGlobal`
     @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Carter+One|Titan+One|Viga');
+    @import url('https://fonts.googleapis.com/css?family=VT323');
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
     html{
         line-height: 1.15; /* 1 */
         -webkit-text-size-adjust: 100%; /* 2 */

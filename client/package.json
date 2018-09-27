@@ -10,8 +10,10 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "fontawesome": "^4.7.2",
+    "moment": "^2.22.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
+    "react-code-prettify": "^0.0.1",
     "react-dom": "^16.5.2",
     "react-scripts": "1.1.5",
     "styled-components": "^3.4.9"

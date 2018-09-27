@@ -21,6 +21,7 @@
     "concurrently": "^4.0.1",
     "dom": "^0.0.3",
     "express": "^4.16.3",
+    "moment": "^2.22.2",
     "react-pose": "^3.3.4",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
