@@ -88,10 +88,9 @@ export default class Menu extends React.Component {
         return (
             <Container pose={this.state.estado}>
                 <Elemento><NavLink to="/">Home</NavLink></Elemento>
-                <Elemento><NavLink to="/contacto">Contacto</NavLink></Elemento>
                 <Elemento><NavLink to="/proyectos">Proyectos</NavLink></Elemento>
                 <Elemento><NavLink to="/acerca">Sobre mi</NavLink></Elemento>
-                
+                <Elemento><NavLink to="/contacto">Contacto</NavLink></Elemento>
             </Container>
         )
     }

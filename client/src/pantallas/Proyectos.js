@@ -130,6 +130,8 @@ const Tecnologias = styled.div`
         box-shadow:0 5px 7px 0 rgba(0,0,0,0.6);
     }
 
+    
+
 `
 const ContainerImage = styled(posed.div({
     hoverable:true,
@@ -176,21 +178,16 @@ export class Proyectos extends Component {
                             <Descripcion>Sitio y aplicación web con contenido servido mediante modernas tecnologías web tales como React.js, GraphQL, MongoDb y Node.js. Mas que un sitio web,
                                 es una aplicación web dinámica. Los usuarios que se registran pueden marcar sus caricaturas favoritas. El trabajo artístico pertenece al genial caricaturista panameño
                                 Hildebrando Sucre. Sus caricaturas y ocurrencias son de corte político - social.
-
                             </Descripcion>
                             <Tecnologias>
-
                                 <p><a href="http://reactjs.org" target="_blank">React.js</a></p>
                                 <p><a href="http://nodejs.org" target="_blank">Node.js</a></p>
                                 <p><a href="http://graphql.org" target="_blank">GraphQL</a></p>
-                                <p><a href="http://reactjs.org" target="_blank">React.js</a></p>
                                 <p><a href="http://heroku.com" target="_blank">Heroku</a></p>
                                 <p><a href="http://cloudinary.com" target="_blank">Cloudinary</a></p>
                             </Tecnologias>
                             <a href="http://www.elbochinchoso.com">Visítalo Aqui</a>
                         </div>
-
-
 
 
                         <ContainerImage> <a href="https://youtu.be/PgLM_RzmKB8" target="_blank"><img src={Hildesite} alt="yarisite" /></a></ContainerImage>
