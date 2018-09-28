@@ -39,6 +39,8 @@ const Container = styled.div`
     }
     h3,h4{
       color:rgb(210, 77, 87);
+      font-size:1.6em;
+      margin:30px 0;
     }
     p{
       
