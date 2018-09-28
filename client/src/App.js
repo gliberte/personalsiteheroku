@@ -13,15 +13,22 @@ import articulos from '../src/articulos/data'
 
 //articulos
 import Articulo0 from '../src/articulos/articulo0'
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-125428278-1');
 
 const Contenedor = styled.div`
 
 `
 
 class App extends Component {
+  
   render() {
+    const fireTracking = ()=>{
+      ReactGA.pageview(window.location.hash)
+    }
     return (
-      <BrowserRouter>
+      <BrowserRouter onUpdate={fireTracking}>
         <React.Fragment>
           <Route exact path="/" component={Home} />
           <Route path="/contacto" component={Contacto} />
