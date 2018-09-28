@@ -9,9 +9,12 @@ import pic01 from './pic01.png'
 import vistamapa from './vistamapa.jpg'
 import Code from 'react-code-prettify'
 import {Share,Follow} from 'react-twitter-widgets'
+import Disqus from 'disqus-react'
 
 import articulos from '../data'
 
+
+const urlarticulo = "http://luisssolano.com/articulo0"
 const Encabezado = styled(posed.section({
 
 })) `
@@ -354,8 +357,13 @@ export default class articulo1 extends Component {
            <p>
            El resultado será el mismo. En mi caso, el tipo de capa geográfica que creé en geojson.io es de lineas.
            </p>
-           <Share url="http://luisssolano.com/articulo0"/>
+           <Share url={urlarticulo}/>
            <Follow username="gliberte"/>
+           <Disqus.DiscussionEmbed shortname="luisssolano" config={{
+             url:urlarticulo,
+             identifier:0,
+             title:articulo.titulo
+           }} />
 
 
 
