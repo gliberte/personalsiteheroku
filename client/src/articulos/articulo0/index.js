@@ -198,7 +198,7 @@ export default class articulo1 extends Component {
           <Share url="http://luisssolano.com/articulo0"/>
           <Follow username="gliberte"/>
           <h1>{articulo.titulo}</h1>
-          <Fecha>{moment(articulo.fecha).format('LLLL')}</Fecha>
+          <Fecha>{moment(articulo.fecha).format('dddd D [de] MMMM[,] YYYY')}</Fecha>
           <h2>Introduccion</h2>
 
           <p>
