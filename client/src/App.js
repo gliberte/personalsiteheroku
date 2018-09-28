@@ -13,9 +13,9 @@ import articulos from '../src/articulos/data'
 
 //articulos
 import Articulo0 from '../src/articulos/articulo0'
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-125428278-1');
+// ReactGA.initialize('UA-125428278-1');
 
 const Contenedor = styled.div`
 
@@ -24,11 +24,12 @@ const Contenedor = styled.div`
 class App extends Component {
   
   render() {
-    const fireTracking = ()=>{
-      ReactGA.pageview(window.location.hash)
-    }
+    // const fireTracking = ()=>{
+    //   console.log(window.location.hash)
+    //   ReactGA.pageview(window.location.hash)
+    // }
     return (
-      <BrowserRouter onUpdate={fireTracking}>
+      <BrowserRouter>
         <React.Fragment>
           <Route exact path="/" component={Home} />
           <Route path="/contacto" component={Contacto} />
