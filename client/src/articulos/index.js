@@ -16,7 +16,7 @@ const Encabezado = styled(posed.section({
   background:url(${fondo}) no-repeat center center;
   background-size:cover;
 
-  @media (max-width:360px){
+  @media (max-width:375px){
     height:200px;
   }
 
@@ -34,7 +34,7 @@ const Container = styled(posed.section({
   width:900px;
   margin:0 auto;
 
-  @media (max-width:360px){
+  @media (max-width:375px){
     width:100%;
   }
 
@@ -46,7 +46,7 @@ const ListaArticulos = styled(posed.ul({}))`
   list-style:none;
   
 
-  @media (max-width:360px){
+  @media (max-width:375px){
     margin-top:50px;
   }
 
@@ -76,7 +76,7 @@ const ItemArticulo = styled(posed.li({
     font-style:italic;
   }
 
-  @media (max-width:360px){
+  @media (max-width:375px){
     a{
       font-size:14px;
     }

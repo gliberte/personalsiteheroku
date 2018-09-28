@@ -18,7 +18,7 @@ const Encabezado = styled(posed.section({
   background:url(${fondo}) no-repeat center center;
   background-size:cover;
 
-  @media (max-width:360px){
+  @media (max-width:375px){
     height:200px;
   }
 
@@ -73,7 +73,7 @@ const Container = styled.div`
       background:rgb(236, 236, 236);
     }
     
-    @media (max-width:360px){
+    @media (max-width:375px){
       width:100%;
       padding:30px 5px;
       blockquote{
