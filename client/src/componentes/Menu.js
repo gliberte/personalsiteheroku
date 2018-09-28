@@ -17,10 +17,24 @@ const Container = styled(posed.ul({
     }
 })) `
     position:absolute;
-    top:5%;
+    padding:0;
+    
     right:0;
+
+    top:5%;
+
     list-style:none;
     z-index:999;
+
+    @media (max-width:768px){
+        background:rgba(0,0,0,0.5);
+        text-align:center;
+    }
+
+    @media (max-width:375px){
+        top:10px;
+        text-align:center;
+    }
 `
 const Elemento = styled(posed.li({
     hoverable:true,
@@ -58,11 +72,13 @@ const Elemento = styled(posed.li({
     
 
     @media (max-width:768px){
+        margin-bottom:20px;
         a{
-            font-size:27px;
+            font-size:26px;
         }
     }
     @media (max-width:414px){
+        margin:10px 10px;
         a{
             font-size:20px;
         }

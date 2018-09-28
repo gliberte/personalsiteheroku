@@ -34,7 +34,7 @@ const Container = styled(posed.section({
   width:900px;
   margin:0 auto;
 
-  @media (max-width:375px){
+  @media (max-width:768px){
     width:100%;
   }
 
@@ -75,7 +75,12 @@ const ItemArticulo = styled(posed.li({
     color:rgb(218, 223, 225);
     font-style:italic;
   }
+  @media (max-width:768px){
 
+    a{
+      font-size:20px;
+    }
+  }
   @media (max-width:375px){
     a{
       font-size:14px;
