@@ -9,12 +9,12 @@ import pic01 from './pic01.png'
 import vistamapa from './vistamapa.jpg'
 import Code from 'react-code-prettify'
 import {Share,Follow} from 'react-twitter-widgets'
-import Disqus from 'disqus-react'
+import Disqus,{CommentCount} from 'disqus-react'
 
 import articulos from '../data'
 
 
-const urlarticulo = "http://luisssolano.com/articulo0"
+
 const Encabezado = styled(posed.section({
 
 })) `
@@ -108,7 +108,13 @@ export default class articulo1 extends Component {
   }
 
   render() {
+    
     const articulo = articulos[0]
+    const disqusConfig = {
+      url:`http://www.luisssolano.com${articulo.url}`,
+      identifier:0,
+      title:articulo.titulo
+    }
     const code1 = `
     import React, { Component } from 'react';
     import ReactMapboxGl  from 'react-mapbox-gl'
@@ -203,6 +209,9 @@ export default class articulo1 extends Component {
           <Share url="http://luisssolano.com/articulo0"/>
           <Follow username="gliberte"/>
           <h1>{articulo.titulo}</h1>
+          <CommentCount shortname="http-www-luisssolano-com" config={disqusConfig}>
+             Comentarios
+          </CommentCount>
           <Fecha>{moment(articulo.fecha).format('dddd D [de] MMMM[,] YYYY')}</Fecha>
           <h2>Introduccion</h2>
 
@@ -357,25 +366,13 @@ export default class articulo1 extends Component {
            <p>
            El resultado será el mismo. En mi caso, el tipo de capa geográfica que creé en geojson.io es de lineas.
            </p>
-           <Share url={urlarticulo}/>
+           <Share url={`http://luisssolano.com${articulo.url}`}/>
            <Follow username="gliberte"/>
-           <Disqus.DiscussionEmbed shortname="luisssolano" config={{
-             url:urlarticulo,
-             identifier:0,
-             title:articulo.titulo
-           }} />
+           <Disqus.DiscussionEmbed shortname="http-www-luisssolano-com" config={disqusConfig} />
 
 
 
 
-
-              
-        
-            
-            
-          
-        
-          
 
         </Container>
 
