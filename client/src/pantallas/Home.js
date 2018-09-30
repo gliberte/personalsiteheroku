@@ -7,14 +7,7 @@ import Menu from '../componentes/Menu'
 import RSociales from '../componentes/RSociales'
 
 const Encabezado = styled(posed.div({
-    enter:{
-        x:0,
-        opacity:1
-    },
-    exit:{
-        x:'-100%',
-        opacity:0
-    },
+    
     hoverable: true,
     hover: {
         filter: 'blur(2px)'

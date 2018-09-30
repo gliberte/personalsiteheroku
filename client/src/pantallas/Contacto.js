@@ -33,7 +33,7 @@ const FormularioContainer = styled(posed.div({
 
     width:400px;
     position:absolute;
-    top:50%;
+    top:70%;
     left:50%;
 
     h1{
@@ -89,7 +89,7 @@ const Formulario = styled.form`
             
         }
         fieldset textarea{
-            height:60px;
+            height:30px;
         }
 
         fieldset label{
