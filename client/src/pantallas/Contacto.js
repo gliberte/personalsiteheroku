@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import posed, { PoseGroup } from 'react-pose'
 
+
+
 import Menu from '../componentes/Menu'
 const Encabezado = styled(posed.div({
     enter: {
@@ -144,13 +146,9 @@ export default class Contacto extends React.Component {
                             <BotonEnviar type="button">Enviar</BotonEnviar>
                         </fieldset>
                         
-
-
                     </Formulario>
                 </FormularioContainer>
                     
-
-
                 </Encabezado>
             </PoseGroup>
         )
