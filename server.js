@@ -1,11 +1,17 @@
 import express from 'express'
 import expressGraphQl from 'express-graphql'
 import schema from './graphql'
+import bodyParser from 'body-parser'
 
 const app = express()
 
 
 require('./db')
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+    extended:false
+}))
 
 app.use('/graphql',expressGraphQl({
     schema,
