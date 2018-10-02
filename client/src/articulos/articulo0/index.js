@@ -6,12 +6,15 @@ import fondo from '../../img/fondoblog.jpeg'
 import moment from 'moment'
 import Menu from '../../componentes/Menu'
 import pic01 from './pic01.png'
-import vistamapa from './vistamapa.jpg'
+import vistamapa from './articulo01.jpg'
 import Code from 'react-code-prettify'
 import {Share,Follow} from 'react-twitter-widgets'
 import Disqus,{CommentCount} from 'disqus-react'
 
 import articulos from '../data'
+import Container from '../componentes/Container'
+import Fecha from '../componentes/Fecha'
+
 
 
 
@@ -27,80 +30,9 @@ const Encabezado = styled(posed.section({
   }
 
 
+`
 
-`
-const Container = styled.div`
-    width:900px;
-    margin:0 auto;
-    padding:60px 200px;
-    background:rgb(238, 238, 238);
-    h1{
-      color:rgb(46, 49, 49);
-    }
-    h2{
-      color:rgb(210, 77, 87);
-    }
-    h3,h4{
-      color:rgb(210, 77, 87);
-      font-size:1.6em;
-      margin:30px 0;
-    }
-    p{
-      
-      font-family: 'Roboto Condensed', sans-serif;
-      font-size:20px;
-      line-height:1.5;
 
-    }
-    blockquote{
-      color:rgb(103, 128, 159);
-      background:rgb(218, 223, 225);
-      padding:20px 50px;
-      font-size:32px;
-      line-height:2;
-      font-style:italic;
-    }
-    code{
-      
-      background:rgb(36, 37, 42);
-      color:rgba(46, 204, 113,0.8);
-      
-      width:100%;
-      
-    }
-    img{
-      width:900px;
-      display:block;
-      margin:0 auto;
-    }
-    pre{
-      font-family: 'VT323', monospace;
-      
-      background:rgb(236, 236, 236);
-    }
-    
-    @media (max-width:768px){
-      width:100%;
-      padding:30px 5px;
-      blockquote{
-        font-size:20px;
-        line-height:1;
-      }
-      img{
-        width:100%;
-      }
-      code{
-        font-size:10px;
-      }
-    }
-    
-    
-`
-const Fecha = styled.span`
-    font-weight:bold;
-    display:block;
-    margin-bottom:3em;
-`
 
 export default class articulo1 extends Component {
   static propTypes = {

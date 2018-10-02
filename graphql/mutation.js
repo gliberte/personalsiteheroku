@@ -1,5 +1,6 @@
 import ContactoType from './models/ContactoType'
 import * as Api from '../db/api/contacto'
+import * as mail from '../mail'
 
 import {
     GraphQLObjectType,

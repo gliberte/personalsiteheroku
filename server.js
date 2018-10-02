@@ -8,6 +8,7 @@ const app = express()
 
 require('./db')
 
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
     extended:false
@@ -30,3 +31,4 @@ const PORT = process.env.PORT || 5555
 app.listen(PORT,()=>{
     console.log(`Servidor iniciado en ${PORT}`)
 })
+
