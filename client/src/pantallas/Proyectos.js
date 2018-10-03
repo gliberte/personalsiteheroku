@@ -211,7 +211,7 @@ export class Proyectos extends Component {
 
 
 
-                        <ContainerImage> <a href="https://youtu.be/eopJSG9d6zs" target="_blank"><img src={barraza} alt="barraza" /></a></ContainerImage>
+                        <ContainerImage> <a href="https://youtu.be/FsOIgWyKeEk" target="_blank"><img src={barraza} alt="barraza" /></a></ContainerImage>
                     </ItemPortaforlio>
                     <ItemPortaforlio>
 
