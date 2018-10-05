@@ -49,7 +49,7 @@ export default class Articulo02 extends React.Component {
             disponibles para crear aplicaciones con mapas digitales? ¿Podemos crear una aplicacion que compita con Google Maps? ¿o que haga lo que Google Map no hace?.
 
           </p>
-          <iframe  src="https://www.youtube.com/embed/LzctKQ0YvYU" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          <iframe  src="https://www.youtube.com/embed/dSdbeIhtrUM" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
           <p>
             Crear datos geográficos es muy sencillo con geojson.io. En el video demuestro lo fácil que es utilizar su interface. Otra herramienta que 
             estoy probando durante el video es <a href="https://github.com/nitin42/react-color-tools/tree/master/docs">react-color-tools</a>. Anteriormente usaba 
