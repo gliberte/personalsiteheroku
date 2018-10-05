@@ -25,6 +25,10 @@ p{
   line-height:1.5;
 
 }
+iframe{
+  width:100%;
+  height:350px;
+}
 blockquote{
   color:rgb(103, 128, 159);
   background:rgb(218, 223, 225);

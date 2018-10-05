@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import posed, { PoseGroup } from 'react-pose'
-import fondo from '../../img/fondoblog.jpeg'
 import moment from 'moment'
 import Menu from '../../componentes/Menu'
 import pic01 from './pic01.png'
@@ -14,23 +13,9 @@ import Disqus,{CommentCount} from 'disqus-react'
 import articulos from '../data'
 import Container from '../componentes/Container'
 import Fecha from '../componentes/Fecha'
+import Encabezado from '../componentes/Encabezado'
 
 
-
-
-const Encabezado = styled(posed.section({
-
-})) `
-  height:400px;
-  background:url(${fondo}) no-repeat center center;
-  background-size:cover;
-
-  @media (max-width:375px){
-    height:200px;
-  }
-
-
-`
 
 
 
@@ -41,10 +26,10 @@ export default class articulo1 extends Component {
 
   render() {
     
-    const articulo = articulos[0]
+    const articulo = articulos.find(articulo => articulo.id === 0)
     const disqusConfig = {
       url:`http://www.luisssolano.com${articulo.url}`,
-      identifier:0,
+      identifier:articulo.id,
       title:articulo.titulo
     }
     const code1 = `

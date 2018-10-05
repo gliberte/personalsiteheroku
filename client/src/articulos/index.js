@@ -120,7 +120,7 @@ export default class Articulos extends Component {
         <Container key="container">
           <ListaArticulos>
 
-            {articulos.map(articulo => {
+            {articulos.sort((a,b)=>moment(b.fecha)-moment(a.fecha)).map(articulo => {
               return (
                 <ItemArticulo key={articulo.id}>
 

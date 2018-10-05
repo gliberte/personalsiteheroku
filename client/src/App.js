@@ -13,10 +13,15 @@ import articulos from '../src/articulos/data'
 
 //articulos
 import Articulo0 from '../src/articulos/articulo0'
+import Articulo01 from '../src/articulos/articulo01'
 // import ReactGA from 'react-ga';
 
 // ReactGA.initialize('UA-125428278-1');
 
+const TheArticles = {
+  0:Articulo0,
+  1:Articulo01
+}
 const Contenedor = styled.div`
 
 `
@@ -37,7 +42,10 @@ class App extends Component {
           <Route path="/acerca" component={About} />
           <Route path="/blog" component={Blog} />
 
-          {<Route path={articulos[0].url} component={Articulo0} />}
+          {articulos.map(articulo=>{
+            console.log(articulo)
+            return <Route key={articulo.id} path={articulo.url} component={TheArticles[articulo.id]}/>
+          })}
 
         </React.Fragment>
 
